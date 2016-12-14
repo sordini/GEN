@@ -44,13 +44,13 @@
 #*********************************************************************
 # PDF CHOICE: this automatically fixes also alpha_s and its evol.    *
 #*********************************************************************
-     nn23lo1    = pdlabel     ! PDF set                                     
-     230000    = lhaid     ! if pdlabel=lhapdf, this is the lhapdf number
+     lhapdf    = pdlabel     ! PDF set                                     
+     263000    = lhaid     ! if pdlabel=lhapdf, this is the lhapdf number
 #*********************************************************************
 # Renormalization and factorization scales                           *
 #*********************************************************************
- True = fixed_ren_scale  ! if .true. use fixed ren scale
- True        = fixed_fac_scale  ! if .true. use fixed fac scale
+ False = fixed_ren_scale  ! if .true. use fixed ren scale
+ False        = fixed_fac_scale  ! if .true. use fixed fac scale
  250.  = scale            ! fixed ren scale
  250.  = dsqrt_q2fact1    ! fixed fact scale for pdf1
  250.  = dsqrt_q2fact2    ! fixed fact scale for pdf2
@@ -265,7 +265,7 @@
 # Store info for systematics studies                                 *
 # WARNING: Do not use for interference type of computation           *
 #*********************************************************************
-   False  = use_syst      ! Enable systematics studies
+   True  = use_syst      ! Enable systematics studies
 #
 #**************************************
 # Parameter of the systematics study
@@ -276,6 +276,6 @@
 None = sys_alpsfact  # \alpha_s emission scale factors
 auto = sys_matchscale # variation of merging scale
 # PDF sets and number of members (0 or none for all members).
-NNPDF23_lo_as_0130_qed = sys_pdf # separate by && if more than one set.
+NNPDF30_lo_as_0130 = sys_pdf # separate by && if more than one set.
 # MSTW2008nlo68cl.LHgrid 1  = sys_pdf
 #
