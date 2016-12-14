@@ -37,6 +37,8 @@ define vl~ = ve~ vm~ vt~
 import model Massive_Higgs_UFO
 define all = ve vm vt ve~ vm~ vt~ u c d s b u~ c~ d~ s~ b~ e- mu- ta- \
 e+ mu+ ta+
-generate g g  > a0 > t t~ , (t > w+ b, w+ > l+ vl), (t~ > w- b~, w- > \
+generate g g  > a0 > t t~ , (t >  w+ b, w+ > all all), (t~ > w- b~, w-\
+ > l- vl~)
+add process g g  > a0 > t t~ , (t > w+ b, w+ > l+ vl), (t~ > w- b~, w- > \
 all all)
-output gg_a0_tt_ttoblnu
+output gg_a0_tt_tbartoblnu
