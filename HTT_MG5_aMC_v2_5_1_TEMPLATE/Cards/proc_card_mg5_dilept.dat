@@ -34,7 +34,7 @@ define l+ = e+ mu+ ta+
 define l- = e- mu- ta-
 define vl = ve vm vt
 define vl~ = ve~ vm~ vt~
-import model Massive_Higgs_UFO
+import model Massive_Higgs_UFO-diag_ckm
 generate g g  > a0 > t t~ , (t > b w+, w+ > l+ vl), (t~ > b~ w-, w\
 - > l- vl~)
 output gg_a0_tt_dilepton
