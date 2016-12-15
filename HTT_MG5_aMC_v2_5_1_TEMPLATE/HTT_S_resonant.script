@@ -318,8 +318,10 @@ define all = ve vm vt ve~ vm~ vt~ u c d s b u~ c~ d~ s~ b~ e- mu- ta- e+ mu+ ta+
 
 # Scalar
 
- generate g g  > h0 > t t~ , (t >  w+ b, w+ > all all), (t~ > w- b~, w- > l- vl~)
- add process g g  > h0 > t t~ , (t > w+ b, w+ > l+ vl), (t~ > w- b~, w- > all all) 
+ generate g g  > h0 > t t~ , (t >  w+ b, w+ > u d~), (t~ > w- b~, w- > l- vl~)
+ add process g g  > h0 > t t~ , (t >  w+ b, w+ > c s~), (t~ > w- b~, w- > l- vl~)
+ add process g g  > h0 > t t~ , (t > w+ b, w+ > l+ vl), (t~ > w- b~, w- > u~ d)
+ add process g g  > h0 > t t~ , (t > w+ b, w+ > l+ vl), (t~ > w- b~, w- > c~ s)
  output scalar_res_semilepton
 
 
