@@ -34,7 +34,7 @@ define l+ = e+ mu+
 define l- = e- mu-
 define vl = ve vm vt
 define vl~ = ve~ vm~ vt~
-import model Massive_Higgs_UFO
+import model Massive_Higgs_UFO-diag_ckm
 define all = ve vm vt ve~ vm~ vt~ u c d s b u~ c~ d~ s~ b~ e- mu- ta- \
 e+ mu+ ta+
 generate g g  > a0 > t t~ , (t >  w+ b, w+ > all all), (t~ > w- b~, w-\
