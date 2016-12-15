@@ -1,0 +1,604 @@
+# Scalar to ttbar - resonant production
+# dilepton final state (e, mu, tau)
+# pseudoscalar + scalar
+# m = 400, 500, 600, 750
+# w = 2.5%, 5%, 10%, 25%, 50%
+
+set nb_core 5
+import model Massive_Higgs_UFO-diag_ckm
+
+# dilepton
+
+define l+ = e+ mu+ ta+
+define l- = e- mu- ta-
+
+# Scalar
+
+ generate p p > h0 > t t~ (t > b w+, w+ > l+ vl), (t~ > b~ w-, w- > l- vl~)
+ output scalar_res_dilepton
+
+# m 400 w 2.5%
+launch -n S_m400_w2p5_dilep
+
+  done
+
+  set run_card nevents 400000
+
+  set param_card MH0 400
+  set H0Width 10
+  set DECAY 6000045 10
+
+  done
+
+# m 400 w 5%
+
+launch -n S_m400_w5_dilep
+
+  done
+
+  set run_card nevents 400000
+
+  set param_card MH0 400
+  set H0Width 20
+  set DECAY 6000045 20
+
+  done
+
+# m 400 w 10%
+
+launch -n S_m400_w10_dilep
+
+  done
+
+  set run_card nevents 400000
+
+  set param_card MH0 400
+  set H0Width 40
+  set DECAY 6000045 40
+
+  done
+
+
+# m 400 w 25%
+
+launch -n S_m400_w25_dilep
+
+  done
+
+  set run_card nevents 400000
+
+  set param_card MH0 400
+  set H0Width 100
+  set DECAY 6000045 100
+
+  done
+
+# m 400 w 50%
+
+launch -n S_m400_w50_dilep
+
+  done
+
+  set run_card nevents 400000
+
+  set param_card MH0 400
+  set H0Width 200
+  set DECAY 6000045 200
+
+  done
+
+# m 500 w 2.5%
+
+launch -n S_m500_w2p5_dilep
+
+  done
+
+  set run_card nevents 400000
+
+  set param_card MH0 500
+  set H0Width 12.5
+  set DECAY 6000045 12.5
+
+  done
+
+# m 500 w 5%
+
+launch -n S_m500_w5_dilep
+
+  done
+
+  set run_card nevents 400000
+
+  set param_card MH0 500
+  set H0Width 25
+  set DECAY 6000045 25
+
+  done
+
+# m 500 w 10%
+
+launch -n S_m500_w10_dilep
+
+  done
+
+  set run_card nevents 400000
+
+  set param_card MH0 500
+  set H0Width 50
+  set DECAY 6000045 50
+
+  done
+
+# m 500 w 25%
+
+launch -n S_m500_w25_dilep
+
+  done
+
+  set run_card nevents 400000
+
+  set param_card MH0 500
+  set H0Width 125
+  set DECAY 6000045 125
+
+  done
+
+# m 500 w 50%
+
+launch -n S_m500_w50_dilep
+
+  done
+
+  set run_card nevents 400000
+
+  set param_card MH0 500
+  set H0Width 250
+  set DECAY 6000045 250
+
+  done
+
+# m 600 w 2.5%
+
+launch -n S_m600_w2p5_dilep
+
+  done
+
+  set run_card nevents 400000
+
+  set param_card MH0 600
+  set H0Width 15
+  set DECAY 6000045 15
+
+  done
+
+# m 600 w 5%
+
+launch -n S_m600_w5_dilep
+
+  done
+
+  set run_card nevents 400000
+
+  set param_card MH0 600
+  set H0Width 30
+  set DECAY 6000045 30
+
+  done
+
+# m 600 w 10%
+
+launch -n S_m600_w10_dilep
+
+  done
+
+  set run_card nevents 400000
+
+  set param_card MH0 600
+  set H0Width 60
+  set DECAY 6000045 60
+
+  done
+
+
+# m 600 w 25%
+
+launch -n S_m600_w25_dilep
+
+  done
+
+  set run_card nevents 400000
+
+  set param_card MH0 600
+  set H0Width 150
+  set DECAY 6000045 150
+
+  done
+
+# m 600 w 50%
+
+launch -n S_m600_w50_dilep
+
+  done
+
+  set run_card nevents 400000
+
+  set param_card MH0 600
+  set H0Width 300
+  set DECAY 6000045 300
+
+  done
+
+# m 750 w 2.5%
+
+launch -n S_m750_w2p5_dilep
+  
+  done
+
+  set run_card nevents 400000
+
+  set param_card MH0 750
+  set H0Width 18.75
+  set DECAY 6000045 18.75
+
+  done
+
+# m 750 w 5%
+
+launch -n S_m750_w5_dilep
+
+  done
+
+  set run_card nevents 400000
+
+  set param_card MH0 750
+  set H0Width 37.5
+  set DECAY 6000045 37.5
+
+  done
+
+# m 750 w 10%
+
+launch -n S_m750_w10_dilep
+
+  done
+
+  set run_card nevents 400000
+
+  set param_card MH0 750
+  set H0Width 75
+  set DECAY 6000045 75
+
+  done
+
+
+# m 750 w 25%
+
+launch -n S_m750_w25_dilep
+
+  done
+
+  set run_card nevents 400000
+
+  set param_card MH0 750
+  set H0Width 187.5
+  set DECAY 6000045 187.5
+
+  done
+
+# m 750 w 50%
+
+lunch -n S_m750_w50_dilep
+
+  done
+
+  set run_card nevents 400000
+
+  set param_card MH0 750
+  set H0Width 375
+  set DECAY 6000045 375
+
+  done
+
+# Scalar to ttbar - resonant production
+# semilepton final state
+# pseudoscalar + scalar
+# m = 400, 500, 600, 750
+# w = 2.5%, 5%, 10%, 25%, 50%
+
+#semileptonic
+
+define l+ = e+ mu+
+define l- = e- mu-
+define all = ve vm vt ve~ vm~ vt~ u c d s b u~ c~ d~ s~ b~ e- mu- ta- e+ mu+ ta+
+
+# Scalar
+
+ generate g g  > a0 > t t~ , (t >  w+ b, w+ > all all), (t~ > w- b~, w- > l- vl~)
+ add process g g  > a0 > t t~ , (t > w+ b, w+ > l+ vl), (t~ > w- b~, w- > all all) 
+ output scalar_res_semilepton
+
+
+# m 400 w 2.5%
+launch -n S_m400_w2p5_semilep
+
+  done
+
+  set run_card nevents 500000
+
+  set param_card MH0 400
+  set H0Width 10
+  set DECAY 6000045 10
+
+  done
+
+# m 400 w 5%
+
+launch -n S_m400_w5_semilep
+
+  done
+
+  set run_card nevents 500000
+
+  set param_card MH0 400
+  set H0Width 20
+  set DECAY 6000045 20
+
+  done
+
+# m 400 w 10%
+
+launch -n S_m400_w10_semilep
+
+  done
+
+  set run_card nevents 500000
+
+  set param_card MH0 400
+  set H0Width 40
+  set DECAY 6000045 40
+
+  done
+
+
+# m 400 w 25%
+
+launch -n S_m400_w25_semilep
+
+  done
+
+  set run_card nevents 500000
+
+  set param_card MH0 400
+  set H0Width 100
+  set DECAY 6000045 100
+
+  done
+
+# m 400 w 50%
+
+launch -n S_m400_w50_semilep
+
+  done
+
+  set run_card nevents 500000
+
+  set param_card MH0 400
+  set H0Width 200
+  set DECAY 6000045 200
+
+  done
+
+# m 500 w 2.5%
+
+launch -n S_m500_w2p5_semilep
+
+  done
+
+  set run_card nevents 500000
+
+  set param_card MH0 500
+  set H0Width 12.5
+  set DECAY 6000045 12.5
+
+  done
+
+# m 500 w 5%
+
+launch -n S_m500_w5_semilep
+
+  done
+
+  set run_card nevents 500000
+
+  set param_card MH0 500
+  set H0Width 25
+  set DECAY 6000045 25
+
+  done
+
+# m 500 w 10%
+
+launch -n S_m500_w10_semilep
+
+  done
+
+  set run_card nevents 500000
+
+  set param_card MH0 500
+  set H0Width 50
+  set DECAY 6000045 50
+
+  done
+
+# m 500 w 25%
+
+launch -n S_m500_w25_semilep
+
+  done
+
+  set run_card nevents 500000
+
+  set param_card MH0 500
+  set H0Width 125
+  set DECAY 6000045 125
+
+  done
+
+# m 500 w 50%
+
+launch -n S_m500_w50_semilep
+
+  done
+
+  set run_card nevents 500000
+
+  set param_card MH0 500
+  set H0Width 250
+  set DECAY 6000045 250
+
+  done
+
+# m 600 w 2.5%
+
+launch -n S_m600_w2p5_semilep
+
+  done
+
+  set run_card nevents 500000
+
+  set param_card MH0 600
+  set H0Width 15
+  set DECAY 6000045 15
+
+  done
+
+# m 600 w 5%
+
+launch -n S_m600_w5_semilep
+
+  done
+
+  set run_card nevents 500000
+
+  set param_card MH0 600
+  set H0Width 30
+  set DECAY 6000045 30
+
+  done
+
+# m 600 w 10%
+
+launch -n S_m600_w10_semilep
+
+  done
+
+  set run_card nevents 500000
+
+  set param_card MH0 600
+  set H0Width 60
+  set DECAY 6000045 60
+
+  done
+
+
+# m 600 w 25%
+
+launch -n S_m600_w25_semilep
+
+  done
+
+  set run_card nevents 500000
+
+  set param_card MH0 600
+  set H0Width 150
+  set DECAY 6000045 150
+
+  done
+
+# m 600 w 50%
+
+launch -n S_m600_w50_semilep
+
+  done
+
+  set run_card nevents 500000
+
+  set param_card MH0 600
+  set H0Width 300
+  set DECAY 6000045 300
+
+  done
+
+# m 750 w 2.5%
+
+launch -n S_m750_w2p5_semilep
+  
+  done
+
+  set run_card nevents 500000
+
+  set param_card MH0 750
+  set H0Width 18.75
+  set DECAY 6000045 18.75
+
+  done
+
+# m 750 w 5%
+
+launch -n S_m750_w5_semilep
+
+  done
+
+  set run_card nevents 500000
+
+  set param_card MH0 750
+  set H0Width 37.5
+  set DECAY 6000045 37.5
+
+  done
+
+# m 750 w 10%
+
+launch -n S_m750_w10_semilep
+
+  done
+
+  set run_card nevents 500000
+
+  set param_card MH0 750
+  set H0Width 75
+  set DECAY 6000045 75
+
+  done
+
+
+# m 750 w 25%
+
+launch -n S_m750_w25_semilep
+
+  done
+
+  set run_card nevents 500000
+
+  set param_card MH0 750
+  set H0Width 187.5
+  set DECAY 6000045 187.5
+
+  done
+
+# m 750 w 50%
+
+launch -n S_m750_w50_semilep
+
+  done
+
+  set run_card nevents 500000
+
+  set param_card MH0 750
+  set H0Width 375
+  set DECAY 6000045 375
+
+  done
+
+
+  exit
