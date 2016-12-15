@@ -14,7 +14,7 @@ define l- = e- mu- ta-
 
 # Pseudoscalar
 
- generate p p > a0 > t t~ (t > b w+, w+ > l+ vl), (t~ > b~ w-, w- > l- vl~)
+ generate p p > a0 > t t~ , (t > b w+, w+ > l+ vl), (t~ > b~ w-, w- > l- vl~)
  output pseudoscalar_res_dilepton
 
 # m 400 w 2.5%
@@ -298,6 +298,11 @@ launch -n PS_m750_w50_dilep
   set DECAY 6000046 375
 
   done
+
+  launch -i
+  print_results --path=pseudoscalar_res_dilepton.txt --format=short
+
+  exit
 
 # Pseudoscalar to ttbar - resonant production
 # semileptonic final state 
@@ -599,5 +604,7 @@ launch -n PS_m750_w50_semilep
 
   done
 
+  launch -i
+  print_results --path=pseudoscalar_res_semilepton.txt --format=short
 
   exit

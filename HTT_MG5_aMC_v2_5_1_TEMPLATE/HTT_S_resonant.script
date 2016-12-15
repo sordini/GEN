@@ -14,7 +14,7 @@ define l- = e- mu- ta-
 
 # Scalar
 
- generate p p > h0 > t t~ (t > b w+, w+ > l+ vl), (t~ > b~ w-, w- > l- vl~)
+ generate p p > h0 > t t~, (t > b w+, w+ > l+ vl), (t~ > b~ w-, w- > l- vl~)
  output scalar_res_dilepton
 
 # m 400 w 2.5%
@@ -298,6 +298,11 @@ lunch -n S_m750_w50_dilep
   set DECAY 6000045 375
 
   done
+
+  launch -i
+  print_results --path=scalar_res_dilepton.txt --format=short
+
+  exit 
 
 # Scalar to ttbar - resonant production
 # semilepton final state
@@ -600,5 +605,7 @@ launch -n S_m750_w50_semilep
 
   done
 
+  launch -i
+  print_results --path=scalar_res_semilepton.txt --format=short
 
   exit
